@@ -1,0 +1,101 @@
+.Navbar{
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+        background-color: teal;
+}
+.navItems:hover{
+    cursor: pointer;
+}
+
+.pricing,.booking,.login,.signup{
+    display: none;
+}
+
+/* .search [type='text']{
+    height: 30px;
+    color: rgb(65, 23, 161);
+    border: 1px solid gray;
+    padding-left: 10px;
+
+} */
+
+.home{
+    display: flex;
+    margin-top: 5px;
+}
+.home span{
+    display: block;
+}
+#homeIcon{
+    color: crimson;
+}
+
+.search{
+    display: flex;
+}
+
+#searchIcon{
+display: block;
+color:whitesmoke;
+border: 1px solid gray;
+border-left: none;
+min-width: 13%;
+height: 70%;
+padding-top:5px; 
+padding-left: 3px;
+background-color: whitesmoke;
+}
+#accountIcon{
+    color: rgb(4, 1, 20);
+    font-size: 35px;
+}
+
+@media (min-width:600px){
+    .Navbar{
+        display: flex;
+        justify-content:initial;
+
+    }
+.left{
+    margin-left: 10%;
+    display: flex;
+justify-content: flex-end;
+    width: 60%;
+}
+    .pricing,.booking,.login,.signup{
+        display: block;
+        text-align: center;
+        padding: 5px;
+        border: 1px solid whitesmoke;
+        width: 20%;
+        color: whitesmoke;
+        background-color: rgba(0, 128, 128,1);
+    }
+  
+    .search{
+        margin-left: 5%;
+        margin-top: 5px;
+        width: 20%;
+    }
+    .search [type='text']{
+        width: 81%;
+    }
+    #searchIcon{
+        min-width: 13%;
+        height: 70%;
+        }
+
+        
+        .home span{
+            display: block;
+            font-size: x-large;
+        }
+        
+
+        #accountIcon{
+           margin-left: 3px;
+           padding-top: 5px;
+        }
+}
